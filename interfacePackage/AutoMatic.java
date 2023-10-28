@@ -1,5 +1,3 @@
-package interfacePackage;
-
 
 public class AutoMatic implements Car {
     private String carType = "Automatic";

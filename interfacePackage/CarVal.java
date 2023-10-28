@@ -1,5 +1,3 @@
-package interfacePackage;
-
 
 public class CarVal {
     public static void main(String[] args) {

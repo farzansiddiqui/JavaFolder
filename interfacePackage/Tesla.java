@@ -1,4 +1,3 @@
-package interfacePackage;
 
 public class Tesla implements Car{
     private String carType= "Tesla";

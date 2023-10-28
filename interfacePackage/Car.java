@@ -1,4 +1,4 @@
-package interfacePackage;
+
 
 public interface Car {
     void turnOnCar();

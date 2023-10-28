@@ -12,9 +12,9 @@ public class SortingJava{
             for (int j = i+1; j < sortNumber.length; j++) {
                 int temp = 0;
                 if (sortNumber[i] > sortNumber[j]) {
-                    temp = sortNumber[i];
-                    sortNumber[i] = sortNumber[j];
-                    sortNumber[j] = temp;
+                    temp = sortNumber[i]; // 45
+                    sortNumber[i] = sortNumber[j]; // 23,
+                    sortNumber[j] = temp; // 
                 }
             }
         }
