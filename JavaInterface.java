@@ -24,7 +24,7 @@ class Animal {
     }
 }
  class Dog extends Animal {
-    int nID ;
+    int nID;
     Dog(String firstName ,String lastName, int idNumber, int nID) {
         super(firstName, lastName, idNumber);
     }
