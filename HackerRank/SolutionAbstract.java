@@ -12,16 +12,6 @@ public class SolutionAbstract {
     b.display();
     
 }
-abstract class Book {
-    String title;
-    String author;
-
-    Book(String title, String author){
-            this.title = title;
-            this.author = author;
-    }
-        abstract void display();
-}
 class MyBook extends Book {
     int price;
 
@@ -36,3 +26,15 @@ class MyBook extends Book {
     }
 
 }
+
+abstract class Book {
+    String title;
+    String author;
+
+    Book(String title, String author){
+            this.title = title;
+            this.author = author;
+    }
+        abstract void display();
+}
+
