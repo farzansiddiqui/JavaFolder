@@ -20,8 +20,7 @@ public class FindDuplicateNumber {
                     System.out.println(entry.getKey());
                    }
                    
-                   System.out.println();
-                   
+                    
                    }
                    
         }
