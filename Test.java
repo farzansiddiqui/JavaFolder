@@ -53,6 +53,18 @@ public class Test {
         }
         return new String(charArray);
     }
+    
+    static void convertOpposite(StringBuffer str){
+            int len = str.length();
+            for (int i = 0; i < len; i++) {
+                    Character c = str.charAt(i);
+                    if (Character.isUpperCase(c)) {
+                        str.replace(i, i+1, Character.toLowerCase(c)+" ");
+                    }else {
+                        str.replace(i, i +1, Character.toUpperCase(c)+" ");
+                    }
+            }
+    }   
 
     public static int isPalindrom(String S){
         int val = 0;
