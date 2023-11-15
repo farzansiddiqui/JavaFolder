@@ -5,6 +5,8 @@ import java.util.Stack;
 public class StackJava {
     public static void main(String[] args) {
         Stack<Integer> stack = new Stack<Integer>();
+
+        
         
         stackPush(stack);
         stackPop(stack);
@@ -26,7 +28,7 @@ public class StackJava {
         System.out.println("Pop Operations...");
         for (int i = 0; i < 5; i++) {
                 Integer aInteger = stack.pop();
-                System.out.println(aInteger);
+               System.out.println(aInteger);
         }
     }
     // Displaying element on the top of the stack..
