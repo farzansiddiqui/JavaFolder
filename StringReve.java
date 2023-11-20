@@ -1,4 +1,4 @@
-public class StringReve {
+  public class StringReve {
     public static void main(String[] args) {
         String original  = "acb";
         String revers = "";

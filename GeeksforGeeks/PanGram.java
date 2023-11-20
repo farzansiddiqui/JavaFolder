@@ -31,7 +31,7 @@ public class PanGram {
                 if (isLetter(str.charAt(i))) {
                     // Mark current letter as present
                     int letter = str.charAt(i) - 'a';
-                    System.out.print(letter+ " ");
+                
                     present[letter] = true;
                 }
 

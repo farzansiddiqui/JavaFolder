@@ -1,14 +1,9 @@
 class ReverseWords {
     public static void main(String[] args) {
-        String s[] = "you shall not pass".split(" "); 
-        String ans = ""; 
+       
         String reString = reverseWords("Farzan Hassan Siddiqui");
         System.out.println(reString);
-       
-        // for (int i = s.length - 1; i >= 0; i--) { 
-        //   ans += s[i] + " "; 
-        // } 
-        // System.out.println("Reversed String: " + ans); 
+    
     }
 
     public static String reverseWords(String input) {

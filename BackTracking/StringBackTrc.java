@@ -3,6 +3,8 @@ package BackTracking;
 public class StringBackTrc {
     public static void main(String[] args) {
         String str = "ABC";
+        String newStr = str.substring(0, 0)+str.substring(0+ 1);
+        System.out.println(newStr);
         printPermutation(str, "", 0);
 
     }
