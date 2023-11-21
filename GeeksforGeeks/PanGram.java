@@ -21,6 +21,7 @@ public class PanGram {
         return true;
     }
 
+
     static boolean allLetter(String str, int len){
             str = str.toLowerCase();
             boolean[] present = new boolean[size];
