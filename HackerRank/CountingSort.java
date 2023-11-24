@@ -14,6 +14,8 @@ public class CountingSort {
         List<Integer> result = countingSort(aList);
         System.out.print(result);
 
+        System.out.println(palindrom("Radar"));
+
 
     }
 
@@ -34,5 +36,23 @@ public class CountingSort {
         return list;
 
     }
+
+    static boolean palindrom(String value) {
+        String rev = "";
+        
+        for (int i = value.length() - 1; i>=0; i--) {
+                rev+=value.charAt(i);
+        }
+
+        if (value.toLowerCase().equals(rev.toLowerCase())) {
+                return true;
+        }
+
+        return false;
+
+
+    }
+
+
    
 }
