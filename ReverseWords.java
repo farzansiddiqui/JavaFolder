@@ -19,7 +19,7 @@ class ReverseWords {
               } else {
                   reverseCharacters(characters, start, end - 1); // Reverse a word
               }
-              start = end + 1; // Move to the next word
+              // Move to the next word
           }
       }
 
