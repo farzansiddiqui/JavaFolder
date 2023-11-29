@@ -9,8 +9,7 @@ public class CountingSort {
         List<Integer> aList = Arrays.asList(1, 2, 3, 5, 9, 8, 6, 7, 6,1,6);
         List<Integer> result = countingSort(aList);
         System.out.print(result);
-        String value = "Siddiqui";
-        v
+        
 
 //         List <Integer> result = new ArrayList<>(100);
 //     for (int i = 0; i < 100; i++) {
