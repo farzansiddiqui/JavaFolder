@@ -1,13 +1,14 @@
 import java.io.BufferedReader;
-import java.io.InputStream;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class MultiArray {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        
         Scanner sc = new Scanner(System.in);
         BufferedReader bReader = new BufferedReader(new InputStreamReader(System.in));
-    
+        int br = Integer.parseInt(bReader.readLine());
         int rows = sc.nextInt();
         int columns = sc.nextInt();
         int[][] myNumbers = new int[rows][columns];

@@ -1,16 +1,32 @@
+import java.util.Scanner;
+
 public class JavaCon {
     public static void main(String[] args) {
     
-        nameChanged(null);
-       
+     Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int n = scanner.nextInt();
+
+    
+
+        int goodNumberCount = 0;
+        int num = 0;
+
+        while (goodNumberCount < n) {
+            num++;
+            if (num % 3 == 0 && num % 10 == 3) {
+                continue;
+            }
+            goodNumberCount++;
+        }
+        scanner.close();
+
+        if (goodNumberCount == n) {
+            System.out.println("The " + n + "th good number is: " + num);
+        } else {
+            System.out.println("Write in input number, the last number was a bad number.");
+        }
     
     }
-    
-    public static void nameChanged(String printString){
-        System.out.println("this function is executed..");
-    }
-    public static void nameChanged(Object sObject){
-            System.out.println("This object function is executed..");
-    }
-    
+
 }

@@ -3,13 +3,18 @@ package HackerRank;
 import java.util.Scanner;
 
 public class SolutionAbstract {
+    public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     String title = sc.nextLine();
     String author = sc.nextLine();
     int price = sc.nextInt();
+
+    sc.close();
     
     Book b = new MyBook(title,author, price);
     b.display();
+    }
+  
     
 }
 class MyBook extends Book {
