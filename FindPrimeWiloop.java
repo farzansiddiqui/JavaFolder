@@ -1,6 +1,12 @@
 public class FindPrimeWiloop {
     public static void main(String[] args) {
         printPrimeIsRange(2, 100);
+        int n = 5;
+        if (isPrime(n)) {
+            System.out.println("prime");
+        }else {
+            System.out.println("Not Prime");
+        }
     }
 
     public static void printPrimeIsRange(int start, int end){
@@ -14,7 +20,7 @@ public class FindPrimeWiloop {
 
     }
 
-    public static boolean isPrime(int num){
+    public static boolean isPrime(int num) {
             return isPrimeHelper(num, 2);
     }
 
