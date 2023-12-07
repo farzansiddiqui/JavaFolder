@@ -111,5 +111,35 @@ public static void printArray(int[] arr){
     }
     System.out.println("");
 }
+static void reverseWords(String words){
+    char[] str = words.toCharArray();
+    int length = words.length();
+    reverseArray(str, 0, length - 1);
+    int start = 0;
+    for (int i = 0; i < length; i++) {
+            if (str[i] == ' ' || i == length - 1) {
+                if (i == length - 1) {
+                    reverseArray(str, start, length);
+                }else {
+                    reverseArray(str, start, length - 1);
+                }
+                start=i+1;
+            }
+            
+            
+    }
+
+}
+
+    static void reverseArray(char[] arr, int start, int end){
+        while (start < end) {
+                char temp = arr[start];
+                arr[start] = arr[end];
+                arr[end] = temp;
+                start++;
+                end--;
+        }
+
+    }
 
 }

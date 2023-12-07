@@ -2,7 +2,7 @@ class ReverseWords {
     public static void main(String[] args) {
        
         String reString = reverseWords("Farzan Hassan Siddiqui");
-        System.out.println(reString);
+        System.out.println(reString);       
     
     }
 
