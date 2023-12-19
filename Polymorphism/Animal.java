@@ -1,7 +1,8 @@
 package Polymorphism;
 public class Animal {
     public static void main(String[] args) {
-        Dog dog = new Cat();
+        
+        Dog dog = new Dog();
         dog.run();
     }
 }

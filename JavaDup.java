@@ -1,22 +1,36 @@
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class JavaDup {
     public static void main(String[] args) {
         int[] number = {1, 5 , 5, 7, 8 , 7, 45 , 78, 78,55};
         ArrayList<Integer> aList = new ArrayList<>();
-   
-    
-        findDuplicateNumber(number);
         
-        for (int i = 0; i < number.length; i++) {
-            aList.add(number[i]);   
+        HashMap<Integer, Integer>hMap = new HashMap<>();
+
+        for(int num:number){
+            hMap.put(num, hMap.getOrDefault(num, 0)+1);
+        
         }
-        for (int integer : number) {
-            if (!aList.contains(integer)) {
-               aList.add(integer);
-            }
+
+        for (Map.Entry<Integer,Integer>enteEntry : hMap.entrySet()) {
+                if (enteEntry.getValue() > 1) {
+                    System.out.print(enteEntry.getKey()+" ");
+                }
+        }
+    
+       // findDuplicateNumber(number);
+        
+        // for (int i = 0; i < number.length; i++) {
+        //     aList.add(number[i]);   
+        // }
+        // for (int integer : number) {
+        //     if (!aList.contains(integer)) {
+        //        aList.add(integer);
+        //     }
             
-        }
+        // }
     }
     
     public static void findDuplicateNumber(int[] number){

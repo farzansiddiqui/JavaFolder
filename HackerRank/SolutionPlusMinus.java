@@ -3,15 +3,13 @@ package HackerRank;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
 public class SolutionPlusMinus {
     public static void main(String[] args) {
         List<Integer> list = Arrays.asList(1, 23, -4, -4, 0,-1);
-        List<Integer> list1 = Arrays.asList(1, 2, 3, 4, 5);
+       
         plusMinus(list);
-        miniMaxSum(list1);
+    
         int[] arr = {1,2,3,4,5};
         int[] output =  minMaxSum(arr);
        System.out.println(Arrays.toString(output));
@@ -57,21 +55,6 @@ public class SolutionPlusMinus {
        
     }
 
-    public static void miniMaxSum(List<Integer> arr) {
-        List<Long> sortedInput = arr.stream()
-        .mapToLong(i -> i.longValue())
-        .boxed()
-        .sorted()
-        .collect(toList());
-        
-        long min = sortedInput.subList(0, 4).stream().reduce(0L, Long::sum);
-        long max = sortedInput.subList(arr.size() - 4, arr.size()).stream().reduce(0L, Long::sum);
-        System.out.print(min + " " + max);
-
-            
-    // Write your code here
-
-    }
 
     static int[] minMaxSum(int[] arr){
         int sum = 0;
