@@ -9,7 +9,7 @@ public class FindPrimeWiloop {
         }
     }
 
-    public static void printPrimeIsRange(int start, int end){
+    public static void printPrimeIsRange(int start, int end) {
         if (start > end) {
             return;
         }
