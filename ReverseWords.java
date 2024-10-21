@@ -2,7 +2,16 @@ class ReverseWords {
     public static void main(String[] args) {
        
         String reString = reverseWords("Farzan Hassan Siddiqui");
-        System.out.println(reString);       
+        System.out.println(reString);
+        String words = "Farzan Siddiqui";
+        String[] value = words.split(" ");
+        System.out.println(value.length);
+        String revValue = "";
+        for (int i = value.length - 1; i <= 0; i--) {
+                revValue  = revValue + value[i]+" ";
+        }   
+        System.out.println(revValue);
+
     
     }
 
