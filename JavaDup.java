@@ -5,13 +5,13 @@ import java.util.Map;
 public class JavaDup {
     public static void main(String[] args) {
         int[] number = {1, 5 , 5, 7, 8 , 7, 45 , 78, 78,55};
+        
         ArrayList<Integer> aList = new ArrayList<>();
         
         HashMap<Integer, Integer>hMap = new HashMap<>();
 
         for(int num:number){
             hMap.put(num, hMap.getOrDefault(num, 0)+1);
-        
         }
 
         for (Map.Entry<Integer,Integer>enteEntry : hMap.entrySet()) {
