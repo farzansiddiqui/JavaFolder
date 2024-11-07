@@ -24,6 +24,7 @@ public class StarPattern {
                 System.out.print(i);
               
             }
+            
             System.out.println();
             
             

@@ -8,8 +8,7 @@ public class DuplicateArray {
         int[] nums = {1,2,3,4};
       //  System.out.println(containsDuplicate(nums));
      
-      System.out.println(mult);
-        System.out.println(fact(5));
+
         
     }
     static boolean containsDuplicate(int[] nums){
@@ -40,4 +39,5 @@ public class DuplicateArray {
         }
         return number * fact(number - 1);
     }
+   
 }
