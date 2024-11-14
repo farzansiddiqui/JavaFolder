@@ -17,4 +17,14 @@ class Cat extends Dog {
     public void run(){
         System.out.println("Cat is runing");
     }
+    class Calculator {
+        int add(int a, int b){
+            return a + b;
+        }
+        double add(double a, double b){
+            return a + b;
+        }
+    }
+
 }
+

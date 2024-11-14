@@ -5,6 +5,9 @@ public class StringPalindrome {
         String s1 = "hello world, hello java, hello everyone";
         String s2 = "hello";
 
+        String str = "A man, a plan, a canal: Panama";
+        System.out.println(str.replaceAll("[^a-zA-Z0-9]", " ").replaceAll(" ", "").toLowerCase());
+
         int frequency = foo(s1, s2);
         System.out.println("The frequency of '" + s2 + "' in '" + s1 + "' is: " + frequency);
 
@@ -62,6 +65,11 @@ public class StringPalindrome {
         }
 
         return count;
+    }
+
+   static boolean isPalindromeValue(String s){
+
+        return true;
     }
 
 }

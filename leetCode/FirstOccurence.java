@@ -3,7 +3,7 @@ package leetCode;
 public class FirstOccurence {
     public static void main(String[] args) {
         String hayStack = "hello";
-        System.out.println(hayStack.substring(2,4));
+        
         String needle = "ll";
         System.out.println(strStr(hayStack, needle));
         
@@ -11,7 +11,7 @@ public class FirstOccurence {
     static int strStr(String hayStack, String needle){
         int m = hayStack.length(), n = needle.length();
         for (int i = 0; i <= m - n; i++) {
-            if (hayStack.substring(i, i+ n).equals(needle)) {
+            if (hayStack.substring(i, i + n).equals(needle)) {
                 return i;
             }
         }

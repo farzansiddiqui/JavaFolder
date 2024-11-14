@@ -9,14 +9,14 @@ public class LongestPrefix {
        System.out.println(longestCommonPrefix(input));
 
     }
-    static String findPrefix(String[] arrStrings){
+    static String findPrefix(String[] arrStrings) {
             String prefix = arrStrings[0];
             if (arrStrings == null || arrStrings.length == 0) {
                 return "";
             }
             for (int i = 1; i < arrStrings.length; i++) {
                     while (arrStrings[i].indexOf(prefix) != 0) {
-                        prefix = prefix.substring(0, prefix.length() - 1);
+                        prefix = prefix.substring(0, prefix.length() - 1); // 
                         if (prefix.isEmpty()) {
                             return "";
                         }
