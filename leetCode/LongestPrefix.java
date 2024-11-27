@@ -1,12 +1,18 @@
 package leetCode;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class LongestPrefix {
     public static void main(String[] args) {
         String[] input = {"flower", "flow", "flight"};
        
        System.out.println(longestCommonPrefix(input));
+
+       
+
+       System.err.println(findLongestString("I ldfdfove India"));
+     
 
     }
     static String findPrefix(String[] arrStrings) {
@@ -38,5 +44,15 @@ public class LongestPrefix {
         }
         return ans.toString();
     }
+
+    static String findLongestString(String str){
+        String res = Arrays.stream(str.split(" "))
+                .max(Comparator.comparingInt(String::length))
+                .orElse(null);
+       
+        return res;
+    }
+
+
     
 }
