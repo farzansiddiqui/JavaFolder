@@ -11,6 +11,7 @@ class HashSetPro {
                 s.add(a[i]);
         }
         System.out.println(s);
+        
         TreeSet sorted = new TreeSet<Integer>(s);
         System.out.println("Soring list...");
         System.out.println(sorted);
