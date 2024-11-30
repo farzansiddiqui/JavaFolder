@@ -1,10 +1,9 @@
 package leetCode;
 
-import java.util.Arrays;
-
 public class CountPrime {
     public static void main(String[] args) {
         System.out.println(countPrimes(10));
+        System.out.println(countPrimes1(10));
     }
 
     static int countPrimers(int n){
@@ -37,8 +36,7 @@ public class CountPrime {
 
         boolean[] isPrime = new boolean[n+1];
 
-        
-
+    
         for (int i = 2; i <= Math.sqrt(n); i++){
         
             if (!isPrime[i]){
@@ -58,4 +56,37 @@ public class CountPrime {
 
         return count;
     }
+
+    public static int countPrimes1(int n) {
+        if (n < 3) return 0; // There are no primes less than 3
+
+        boolean[] isPrime = new boolean[n];
+        for (int i = 2; i < n; i++) {
+            isPrime[i] = true; // Assume all numbers are prime initially
+        }
+
+        for (int i = 2; i * i < n; i++) {
+            if (isPrime[i]) {
+                // Mark all multiples of i as non-prime
+                for (int j = i * i; j < n; j += i) {
+                    isPrime[j] = false;
+                }
+            }
+        }
+
+        // Count primes
+        int count = 0;
+        for (boolean prime : isPrime) {
+            if (prime){
+                count++;
+               
+            }
+               
+        }
+        return count;
+    }
+
+   
+
+    
 }

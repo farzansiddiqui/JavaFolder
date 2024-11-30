@@ -12,6 +12,19 @@ public class LongestPrefix {
        
 
        System.err.println(findLongestString("I ldfdfove India"));
+
+       String s = "Iffddfdd lovffgfe IndiaIndiaInda";
+       String[] strValue = s.split(" ");
+
+       
+       String resulString = "";
+
+       for (int index = 0; index < strValue.length; index++) {
+                    if (strValue[index].length() > resulString.length()) {
+                            resulString = strValue[index];
+                    }
+       }
+       System.out.println(resulString);
      
 
     }
