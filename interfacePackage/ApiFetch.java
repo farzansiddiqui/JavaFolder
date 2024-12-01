@@ -1,3 +1,4 @@
+
 class ApiFetch{
   public static void main(String[] args) {
     A b = new M();
@@ -5,6 +6,10 @@ class ApiFetch{
     b.c();
     b.d();
   }  
+
+  Notification notification = new NotificationEmail();
+  Employee employee = new Employee(notification);
+
 }
 
 interface A{
