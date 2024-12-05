@@ -3,13 +3,32 @@ package leetCode;
 import java.util.*;
 
 public class RomanInteger {
+
+    private static final int[] values = { 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 };
+    private static final String[] romanLiterals = { "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I" };
+    
     public static void main(String[] args) {
         String str = "MCMXCIV";
         System.out.println(romanToInt(str));
+        System.out.println(integerToRoman2(1994));
       
     }
+   
+public static final String integerToRoman2(int number) {
 
-    static int romantToInteger(String nums){
+	StringBuilder s = new StringBuilder();
+
+	for (int i = 0; i < values.length; i++) {
+		while (number >= values[i]) {
+			number -= values[i];
+			s.append(romanLiterals[i]);
+		}
+	}
+	return s.toString();
+}
+
+
+    static int romantToInteger(String nums) {
         int res = 0;
         for (int i = 0; i < nums.length(); i++) {
                 int s1 = returnCharValue(nums.charAt(i));
@@ -50,6 +69,11 @@ public class RomanInteger {
 
         }
         return -1;
+    }
+
+    static String intToRoman(int nums){
+
+        return "";
     }
 
      static int romanToInt(String nums){

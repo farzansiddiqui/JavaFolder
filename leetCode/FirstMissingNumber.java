@@ -5,16 +5,15 @@ import java.util.HashSet;
 
 public class FirstMissingNumber {
     public static void main(String[] args) {
-        int[] nums = {1,2,0};
+        int[] nums = {1,2,3,5};
         System.out.println(firstMissingNumber(nums));
 
-        int[] numsValue = {2,5,7,13,10};
+        int[] numsValue = {1,2,3,5};
         printValue(numsValue);
         
     }
 
     static void printValue(int[] numbers){
-        Arrays.sort(numbers);
 
         Arrays.sort(numbers);
        HashSet<Integer> set = new HashSet<>();
